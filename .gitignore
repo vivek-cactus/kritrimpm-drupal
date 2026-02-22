@@ -1,0 +1,129 @@
+# Drupal .gitignore
+
+# -----------------------------------------------
+# Drupal core
+# -----------------------------------------------
+
+# Ignore core (if managing via Composer)
+/web/core
+
+# Or if not using Composer, ignore specific core files
+# /index.php
+# /update.php
+
+# -----------------------------------------------
+# Contributed modules, themes & libraries
+# (if managing via Composer)
+# -----------------------------------------------
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+/web/libraries
+
+# -----------------------------------------------
+# Vendor directory (Composer)
+# -----------------------------------------------
+/vendor
+
+# -----------------------------------------------
+# Drupal settings & sensitive files
+# -----------------------------------------------
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+/web/sites/*/services.local.yml
+
+# -----------------------------------------------
+# Files directory (user uploads)
+# -----------------------------------------------
+/web/sites/*/files
+/web/sites/*/private
+/web/sites/*/tmp
+
+# -----------------------------------------------
+# Drupal default site example files to keep
+# -----------------------------------------------
+!/web/sites/default/default.settings.php
+!/web/sites/default/default.services.yml
+!/web/sites/example.settings.local.php
+!/web/sites/example.sites.php
+
+# -----------------------------------------------
+# Drush
+# -----------------------------------------------
+/drush/sites
+
+# -----------------------------------------------
+# Composer
+# -----------------------------------------------
+/composer.lock        # Optional: commit this for reproducible builds
+/.composer
+
+# -----------------------------------------------
+# Build & cache
+# -----------------------------------------------
+/web/sites/simpletest
+/web/sites/*/error_log
+
+# -----------------------------------------------
+# OS generated files
+# -----------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# -----------------------------------------------
+# IDE & editor files
+# -----------------------------------------------
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+.project
+.buildpath
+.settings/
+
+# -----------------------------------------------
+# Node.js / Frontend tooling
+# -----------------------------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+/web/themes/custom/*/node_modules
+
+# -----------------------------------------------
+# Sass / CSS preprocessors
+# -----------------------------------------------
+.sass-cache/
+*.css.map
+*.sass.cache
+
+# -----------------------------------------------
+# Environment / secrets
+# -----------------------------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------------------------
+# Backup & log files
+# -----------------------------------------------
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+*.log
+*.bak
+*.orig
+*.rej
