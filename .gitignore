@@ -24,6 +24,8 @@
 # Vendor directory (Composer)
 # -----------------------------------------------
 /vendor
+/vendor/
+/.ddev/
 
 # -----------------------------------------------
 # Drupal settings & sensitive files
@@ -56,7 +58,7 @@
 # -----------------------------------------------
 # Composer
 # -----------------------------------------------
-/composer.lock        # Optional: commit this for reproducible builds
+#/composer.lock        # Optional: commit this for reproducible builds
 /.composer
 
 # -----------------------------------------------
