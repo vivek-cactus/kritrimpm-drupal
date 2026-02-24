@@ -1,0 +1,11 @@
+name: Kritrimpm Auth
+type: module
+description: Handles multi-step registration, email verification, and social OAuth login
+core_version_requirement: ^11
+package: Kritrimpm
+dependencies:
+  - drupal:user
+  - drupal:rest
+  - drupal:serialization
+  - drupal:simple_oauth
+  - drupal:social_auth
